@@ -490,7 +490,7 @@ elList.addEventListener('mouseout', () => {
 let chess3D = document.querySelector('.btn__3d');
 let cou = 1
 chess3D.addEventListener('click', () => {
-  list.classList.toggle('chess3d')
+  elList.classList.toggle('chess3d')
   if (cou == 1) {
     chess3D.textContent = '2D'
     cou++
