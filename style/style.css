@@ -1,0 +1,221 @@
+* {
+  padding: 0 ;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+
+li img {
+  width: 100%;
+}
+
+button {
+  border: none;
+}
+
+button img {
+  pointer-events: none;
+}
+
+span {
+  display: none;
+}
+.chess { 
+  width: 100%;
+  max-width: 1560px;
+  height: 100vh;
+  display: flex;
+  justify-content: space-between;
+  background-color: #111212;
+}
+
+.chess__forms-btns {
+  width: 120px;
+  display: flex;
+  flex-direction: column;
+  margin-left: 50px;
+  padding-top: 15px;
+  background-color: transparent;
+}
+
+.chess__forms-btn {
+  width: 80px;
+  border-radius: 15px;
+  margin-bottom: 15px;
+  transition: all 0.4s ;
+}
+.btn__3d:hover, .chess__forms-btn:hover {
+  background-color: #05e40d;
+}
+
+
+.chess__forms-btn img {
+  width: 100%;
+  height: 80px;
+}
+
+.container {
+  position: relative;
+  perspective: 1000px;
+}
+.chess__dos {
+  width: 600px;
+  max-width: 650px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: auto;
+  transform-style: preserve-3d;
+  
+}
+.chess__list {
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  align-items: center;
+  list-style-type: none;
+  border: 20px solid rgb(80, 77, 74);
+  border-radius: 10px;
+  transition: all 0.6s ease;
+
+  
+}
+
+.chess3d {
+  transform: rotateX(45deg) scale(1.3) translateY(-50px);
+}
+.chess__item {
+  position: relative;
+  width: 70px;
+  height: 70px;
+  color: #fff;
+  background: #777;
+  text-align: center;
+  line-height: 100px;
+  margin: 0;
+  padding: 0;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  overflow: hidden;
+}
+
+.black {
+  background-color: #353331;
+}
+
+.white {
+  background-color: #c5c0ba;
+}
+.chess__xy-box { 
+  display: flex;
+  flex-direction: column;
+  margin-right: 50px;
+  padding-top: 15px;
+  background-color: transparent;
+}
+.btn__3d {
+  width: 120px;
+  height: 50px;
+  font-size: 40px;
+  font-weight: 600;
+  color: #000;
+  border: none;
+  margin-right: 15px;
+  margin-bottom: 15px;
+  background-color: #fff;
+  border-radius: 15px;
+ transition: all 0.4s;
+}
+
+
+
+.chess__xy-box p {
+  width: 120px;
+  font-size: 40px;
+  color: #000;
+  padding: 5px 10px;
+  border-radius: 7px;
+  margin-bottom: 10px;
+  background-color: #fff;
+  text-align: start;
+}
+.btn-active {
+  background-color: #05e40d;
+}
+
+.chess__item-active {
+  position: relative;
+  box-shadow: 0 0 30px 13px #a521ac inset;
+  z-index: 4;
+  transition: all 0.1s ease
+}
+.chess__item-active {
+  position: relative;
+  box-shadow: 0 0 30px 13px #05e40d inset;
+  z-index: 4;
+  transition: all 0.1s ease
+}
+
+.form1 {
+  position: relative;
+  background: #fff;
+  background-image: url("/img/forms1.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: 5;
+  transition: all 0.1s ease;
+}
+.form2 {
+  position: relative;
+  background: #fff;
+  background-image: url("/img/forms2.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: 5;
+  transition: all 0.1s ease;
+}
+.form3 {
+  position: relative;
+  background: #fff;
+  background-image: url("/img/forms3.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: 5;
+  transition: all 0.1s ease;
+}
+.form4 {
+  position: relative;
+  background: #fff;
+  background-image: url("/img/forms4.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: 5;
+  transition: all 0.1s ease;
+}
+.form5 {
+  position: relative;
+  background: #fff;
+  background-image: url("/img/forms5.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: 5;
+  transition: all 0.1s ease;
+}
+.form6 {
+  position: relative;
+  background: #fff;
+  background-image: url("/img/forms6.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: 5;
+  transition: all 0.1s ease;
+}
+
+.x-num, .y-num {
+  display: inline;
+}
