@@ -473,7 +473,7 @@ function forms6(x, y) {
   })
 }
 
-list.addEventListener('mouseout', () => {
+elList.addEventListener('mouseout', () => {
   items.forEach((im) => {
     im.classList.remove('chess__item-active')
     im.classList.remove('form1')
